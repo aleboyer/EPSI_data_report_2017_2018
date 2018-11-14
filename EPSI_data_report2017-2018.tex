@@ -1,0 +1,55 @@
+\documentclass[whitelogo]{MOD-report}
+\usepackage{natbib}
+\usepackage{changes}
+\begin{document}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+%% Uncomment following 16 lines for a cover with a picture on the lower half only
+\title[tudelft-white]{EPSI data report}
+\subtitle[tudelft-black]{2017-2018}
+\affiliation{Multi-scale Ocean Dynamic group // Marine Physical laboratory // Scripps Institution of Oceanography}
+\coverimage{EPSIFISH1.jpg}
+\titleoffsetx{10cm}
+\titleoffsety{10cm}
+\afiloffsetx{1cm}
+\afiloffsety{18cm}
+\covertext[tudelft-white]{
+    \textbf{Multi-Scale Ocean Dynamic group (MOD)} \\
+    Marine Physical Laboratory (MPL) \\
+    Scripps Institution of Oceanography (SIO) 
+}
+\author[tudelft-white]{Arnaud Le Boyer and Sean Lastuka }
+\setpagecolor{tudelft-cyan}
+\makecover[split] %alb
+
+
+%% Include an optional title page.
+\input{MOD_title.tex}
+
+\tableofcontents
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+\section{Important to read: Introduction}
+This report documents the data collected with EPSI between June 2017 and December 2018. In this document, we are computing an exhaustive description of the hardware, firmware, processing and data over this time period. The main goal for this first version is to asses the quality of the data for these first deployments. We will present epsilon profiles, shear spectra binned over different epsilon values and the 
+
+\input{EPSI_sproul.tex}
+\input{EPSI_WW_june2017.tex}
+\input{EPSI_SP1810.tex}
+\input{NISKINE.tex}
+\input{MISO_BOB.tex}
+\input{GRANITE.tex}
+\input{SODA.tex}
+
+%% Use letters for the chapter numbers of the appendices.
+\appendix
+
+%\input{appendix-a}
+
+\bibliography{report}
+
+\end{document}
+

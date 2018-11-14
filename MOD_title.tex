@@ -1,0 +1,69 @@
+\begin{titlepage}
+
+
+\begin{center}
+
+%% Insert the TU Delft logo at the bottom of the page.
+
+%% Print the title in cyan.
+{\makeatletter
+\largetitlestyle\fontsize{64}{94}\selectfont\@title
+%\largetitlestyle\color{tudelft-cyan}\Huge\@title
+\makeatother}
+
+%% Print the optional subtitle in black.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \bigskip
+   {\tudsffamily\fontsize{42}{42}\selectfont\@subtitle}    
+    %\titlefont\titleshape\LARGE\@subtitle
+\fi
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+%door
+
+\bigskip
+\bigskip
+
+%% Print the name of the author.
+{\makeatletter
+%\largetitlefont\Large\bfseries\@author
+\largetitlestyle\fontsize{15}{15}\selectfont\@author
+\makeatother}
+
+\vfill
+
+\begin{tabular}{lll}
+    Project number: & MPLMA44 ??? \\
+    Project duration: & \multicolumn{2}{l}{November 2017, December 2018} \\
+    Team members: & Arnaud Le Boyer, & Sean Lastuka \\
+        & Matthew H. Alford, & Michael Goldin \\
+        & Sara Goheen, & Jhonnathan Ladner  \\
+        & Tyler Hennon, & San N'Guyen
+\end{tabular}
+%% Only include the following lines if confidentiality is applicable.
+
+\bigskip
+
+\bigskip
+\bigskip
+An electronic version of this report is available at \url{https://mod2.ucsd.edu/confluence/display/EP}.
+%\\[1cm]
+
+%\centering{\includegraphics{cover/logo_black}}
+
+
+\end{center}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node at (current page.south)[anchor=south,inner sep=0pt]{
+        \includegraphics{cover/mod_logo_v2-01.png}
+    };
+\end{tikzpicture}
+
+\end{titlepage}
+
